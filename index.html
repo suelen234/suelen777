@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BioMercado - Vitrine Dinâmica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>🌿 BioMercado</h1>
+        </div>
+        <div class="search-container">
+            <input type="text" id="inputBusca" placeholder="Pesquise por pragas, culturas ou bioinsumos...">
+        </div>
+        <div class="carrinho-topo">
+            🛒 Cesta: <span id="qtdCesta">0 itens</span> | <span id="totalCesta">0.00 €</span>
+        </div>
+    </header>
+
+    <section class="banner">
+        <h2>Tecnologia Biológica para o Campo, Alimentos Saudáveis para a Mesa</h2>
+        <p>Substitua químicos por defensores ecológicos e compre alimentos cultivados de forma 100% sustentável.</p>
+    </section>
+
+    <section class="categorias-container">
+        <h3>Navegue por Categoria</h3>
+        <div class="botoes-filtro">
+            <button class="btn-filtro ativo" data-categoria="todos">Todos os Produtos</button>
+            <button class="btn-filtro" data-categoria="fungos">🍄 Fungos Benéficos</button>
+            <button class="btn-filtro" data-categoria="insetos">🐝 Insetos Auxiliares</button>
+            <button class="btn-filtro" data-categoria="biofertilizantes">🌱 Biofertilizantes</button>
+            <button class="btn-filtro" data-categoria="frutas">🍎 Frutas Frescas</button>
+        </div>
+    </section>
+
+    <main class="vitrine" id="vitrineProdutos">
+        </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
